@@ -1,0 +1,26 @@
+/*----------------------Nunito*/
+
+
+
+@font-face {
+    font-family: Nunito;
+    src: url("../googlefonts/Nunito/Nunito-VariableFont_wght.ttf");
+}
+
+/*----------------------Poppins*/
+
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url("../googlefonts/Poppins/Poppins-Medium.ttf");
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url("../googlefonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("../googlefonts/Poppins/Poppins-Bold.ttf");
+}
