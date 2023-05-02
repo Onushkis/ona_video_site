@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/variable.css"> 
+
+    <link rel="stylesheet" href="../CSS/index.css">
+    <!-- <link rel="icon" type="image/png" href="../Assets/Img"> -->
+    <title>Video site</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/index.html" class="nav-branding">Ona.house</a>
+  
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="/index.html" class="nav-link">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="/gallery.html" class="nav-link">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a href="/aboutOna.html" class="nav-link">About</a>
+          </li>
+          
+         
+        </ul>
+  
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+          <!-- ---------------------------------- MAIN-->
+
+    
+          <div class="wrapper">
+            <div class="box">
+              <img src="../Assets/Img/gopink.jpg" alt="go pink" width="200" height="200">
+            </div>
+            <div class="box2">
+              <img src="../Assets/Img/horses.jpg" alt="cosmos" width="200" height="200">
+            </div>
+            <div class="box">
+              <img src="../Assets/Img/crazybird.jpg" alt="crazy bird" width="200" height="200">
+            </div>
+            <div class="box2">
+              <img src="../Assets/Img/fish.jpg" alt="fish" width="200" height="200">
+            </div>
+            <div class="box">
+              <img src="../Assets/Img/goyellow.jpg" alt="go yellow" width="200" height="200">
+            </div>
+            <div class="box2">
+              <img src="../Assets/Img/horses.jpg" alt="horses" width="200" height="200">
+            </div>
+            <div class="box">
+              <img src="../Assets/Img/lp_cvover.jpg" alt="lp cover" width="200" height="200">
+            </div>
+            <div class="box2">
+              <img src="../Assets/Img/perrito.jpg" alt=" perrito" width="200" height="200">
+            </div>
+            <div class="box">
+              <img src="../Assets/Img/gopink.jpg" alt="go pink" width="200" height="200">
+            </div>
+            <div class="box2">
+              <img src="../Assets/Img/horses.jpg" alt="horses" width="200" height="200">
+            </div>
+            <div class="box2">
+              <img src="../Assets/Img/cosmos.jpg" alt="cosmos" width="200" height="200">
+            </div>
+            <div class="box">
+              <img src="../Assets/Img/crazybird.jpg" alt="crazy bird" width="200" height="200">
+            </div>
+            <div class="box2">
+              <img src="../Assets/Img/fish.jpg" alt="fish" width="200" height="200">
+            </div>
+            <div class="box">
+              <img src="../Assets/Img/goyellow.jpg" alt="go yellow" width="200" height="200">
+            </div>
+            <div class="box">
+              <img src="../Assets/Img/lp_cvover.jpg" alt="lp cover" width="200" height="200">
+            </div>
+            <div class="box2">
+              <img src="../Assets/Img/perrito.jpg" alt=" perrito" width="200" height="200">
+            </div>
+            <div class="box2">
+              <img src="../Assets/Img/horses.jpg" alt="horses" width="200" height="200">
+            </div>
+            <div class="box">
+              <img src="../Assets/Img/crazybird.jpg" alt="crazy bird" width="200" height="200">
+            </div>
+            <div class="box2">
+              <img src="../Assets/Img/fish.jpg" alt="fish" width="200" height="200">
+            </div>
+            <div class="box">
+              <img src="../Assets/Img/lp_cvover.jpg" alt="lp cover" width="200" height="200">
+            </div>
+            <div class="box2">
+              <img src="../Assets/Img/perrito.jpg" alt=" perrito" width="200" height="200">
+            </div>
+            <div class="box">
+              <img src="../Assets/Img/gopink.jpg" alt="go pink" width="200" height="200">
+            </div>
+            <div class="box2">
+              <img src="../Assets/Img/cosmos.jpg" alt="cosmos" width="200" height="200">
+            </div>
+            <div class="box">
+              <img src="../Assets/Img/crazybird.jpg" alt="crazy bird" width="200" height="200">
+            </div>
+            <div class="bg-text">Welcome <br> to my Art </div>
+          </div>
+        
+
+
+          <!-- ---------------------------------- FOOTER-->
+
+    <footer>
+        <div class="footerdiv">
+          <div class="footer_icons"></div>
+          <!-- <a href="#" class="nav-branding">Ona.house</a> -->
+          <div class="blink_me">
+    
+            <img src="../Assets/Img/ukrains_flag.png" alt="ukraine-flag" width="50" height="50">
+          </div>
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">🔝</button>
+      </footer>
+
+      <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+    
+        hamburger.addEventListener("click", () => {
+          hamburger.classList.toggle("active");
+          navMenu.classList.toggle("active");
+        });
+    
+        document.querySelectorAll(".nav-linl").forEach((n) =>
+          n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenulh.classList.remove("active");
+          })
+        );
+      </script>
+      <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+    
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+          scrollFunction();
+        };
+    
+        function scrollFunction() {
+          if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+          ) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+    
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
+</body>
+</html>
