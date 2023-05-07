@@ -331,10 +331,20 @@ object-position: center;
  }
 
 
-.video{
+/* .video{
     margin-top: 5em;
   display: block;
   margin: 1em auto;
   width: 58%;
   aspect-ratio: 60 / 9;
+} */
+
+	
+
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 5em;
+  margin-bottom: 5em;
 }
