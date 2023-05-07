@@ -325,6 +325,7 @@ object-position: center;
   .d-flexcontent_text{
    padding-left: 3em;
    padding-right: 3em;
+   margin: 3em auto;
  }
  
  }
@@ -332,4 +333,8 @@ object-position: center;
 
 .video{
     margin-top: 5em;
+  display: block;
+  margin: 1em auto;
+  width: 58%;
+  aspect-ratio: 60 / 9;
 }
