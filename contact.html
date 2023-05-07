@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/variable.css"> 
+
+    <link rel="stylesheet" href="CSS/index.css">
+
+    <title>Video site</title>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="nav-branding">Ona.house</a>
+
+    <ul class="nav-menu">
+    
+      <li class="nav-item">
+        <a href="gallery.html" class="nav-link">Gallery</a>
+      </li>
+     
+      <li class="nav-item">
+        <a href="index.html" class="nav-link">About</a>
+      </li>
+    </ul>
+          
+          
+         
+  
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+          <!-- ---------------------------------- MAIN-->
+
+    <main>
+ 
+        <div class="maincontain">
+            <div class="contactimg">
+
+                <img src="Assets/boat.jpg" width="500" height="400" alt="images boat">
+            </div>
+
+            <form class="contact-form" name="myForm">
+                <h1>Get in Touch</h1>
+                <div class="txtb">
+                    <label>Name</label>
+                    <input type="text" name="fname" value="" placeholder="Enter Your Name">
+                </div>
+
+                <div class="txtb">
+                    <label>Email</label>
+                    <input type="email" name="email" value="" placeholder="Enter Your Email">
+                </div>
+                <div class="txtb">
+                    <label>Phone Number</label>
+                    <input type="text" name="phone" value="" placeholder="Enter Your Phone Nuber">
+                </div>
+
+                <div class="txtb">
+                    <label>Message :</label>
+                    <textarea></textarea>
+                </div>
+
+                <a class="btn">Send</a>
+
+            </form>
+        </div>
+      </main>
+        
+           
+        
+       
+
+
+    
+
+
+          <!-- ---------------------------------- FOOTER-->
+
+    <footer>
+        <div class="footerdiv">
+          <div class="footer_icons"></div>
+          <!-- <a href="#" class="nav-branding">Ona.house</a> -->
+          <div class="blink_me">
+    
+            <img src="./Assets/ukrains_flag.png" alt="ukraine-flag" width="50" height="50">
+          </div>
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">🔝</button>
+      </footer>
+
+      <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+    
+        hamburger.addEventListener("click", () => {
+          hamburger.classList.toggle("active");
+          navMenu.classList.toggle("active");
+        });
+    
+        document.querySelectorAll(".nav-linl").forEach((n) =>
+          n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenulh.classList.remove("active");
+          })
+        );
+      </script>
+      <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+    
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+          scrollFunction();
+        };
+    
+        function scrollFunction() {
+          if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+          ) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+    
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
+</body>
+</html>
