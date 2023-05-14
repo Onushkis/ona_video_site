@@ -509,7 +509,7 @@ object-position: center;
      
   }
 
-
+  
 /* .video{
     margin-top: 5em;
   display: block;
@@ -520,6 +520,12 @@ object-position: center;
  */
 	
 /* ------------------------------------------------------------------VIDEO*/
+.video-container{
+  color: purple;
+  width: 100%;
+  height: 100%;
+}
+
 video {
   width: 100%;
   height: auto;
